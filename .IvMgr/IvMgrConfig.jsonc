@@ -1,0 +1,10 @@
+{
+    // 远程仓库地址 eg: "origin"
+    "upstreamRepo": "origin",
+    // 远程分支名称 eg: "master" 或 "main"
+    "upstreamBranch": "main",
+    // 本地分支 主分支 eg: "master" 或 "main"
+    // 这么做的原因是能够让用户在其他分支中开发功能
+    // 我们拒绝用户在此 分支 之外的分支使用 IvMgr 的版本提交功能
+    "localBranch": "main"
+}

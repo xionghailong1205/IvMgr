@@ -1,0 +1,3 @@
+export declare const tplDevLogContent = "A [x] Added \u65B0\u6DFB\u52A0\u7684\u529F\u80FD \u5DF2\u5B8C\u6210\u3002\nA [] Added \u65B0\u6DFB\u52A0\u7684\u529F\u80FD \u8FDB\u884C\u4E2D\u3002\nC [] Changed \u5BF9\u73B0\u6709\u529F\u80FD\u7684\u53D8\u66F4\u3002\nD [] Deprecated \u5DF2\u7ECF\u4E0D\u5EFA\u8BAE\u4F7F\u7528\uFF0C\u5373\u5C06\u79FB\u9664\u7684\u529F\u80FD\u3002\nR [] Removed \u5DF2\u7ECF\u79FB\u9664\u7684\u529F\u80FD\u3002\nF [] Fixed \u5BF9 bug \u7684\u4FEE\u590D\u3002\nS [] Security \u5BF9\u5B89\u5168\u6027\u7684\u6539\u8FDB\u3002";
+export declare const createInitDevLog: () => void;
+//# sourceMappingURL=devLogService.d.ts.map

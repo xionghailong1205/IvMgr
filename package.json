@@ -1,0 +1,46 @@
+{
+  "name": "ivmgr",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "postinstall": "node scripts/postinstall.js",
+    "dev": "tsc --watch",
+    "create": "node node_modules/ivmgr/lib/create.js",
+    "commit": "node node_modules/ivmgr/lib/commit.js",
+    "push": "node node_modules/ivmgr/lib/push.js",
+    "reset": "node node_modules/ivmgr/lib/reset.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@types/semver": "^7.7.1",
+    "typescript": "^6.0.2"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^8.4.1",
+    "columnify": "^1.6.0",
+    "find-up": "^8.0.0",
+    "picocolors": "^1.1.1",
+    "semver": "^7.7.4",
+    "zx": "^8.8.5"
+  },
+  "bin": {
+    "IvMgr": "bin/cli.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xionghailong1205/IvMgr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xionghailong1205/IvMgr/issues"
+  },
+  "homepage": "https://github.com/xionghailong1205/IvMgr#readme"
+}
