@@ -1,3 +1,4 @@
+import "../utils/zxSetup.js";
 /**
  * 执行一次受保护的版本发布提交流程。
  *

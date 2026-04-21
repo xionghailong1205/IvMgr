@@ -1,3 +1,4 @@
+import "../utils/zxSetup.js";
 import fs from "fs";
 import { devLogMdPath } from "../services/pathService.js";
 import { typeMap, type changeEntry, type changeTypes } from "../type.js";

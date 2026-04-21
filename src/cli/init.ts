@@ -1,3 +1,4 @@
+import "../utils/zxSetup.js";
 import fs from "fs";
 import path from "path";
 import { select } from "@inquirer/prompts";

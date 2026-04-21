@@ -1,1 +1,1 @@
-F [x] 修复初始化 Bug
+A [x] 为 zx 库增加在 powershell 上无法运行的补丁.

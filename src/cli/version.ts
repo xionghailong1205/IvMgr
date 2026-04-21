@@ -1,3 +1,4 @@
+import "../utils/zxSetup.js";
 import type { versionInfo } from "../type.js";
 import { versionJsonPath } from "../services/pathService.js";
 import fs from "fs";

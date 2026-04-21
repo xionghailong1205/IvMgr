@@ -1,3 +1,4 @@
+import "../utils/zxSetup.js";
 import fs from "fs";
 import readline from "readline";
 import check from "./check.js";
