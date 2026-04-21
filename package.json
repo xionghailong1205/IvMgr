@@ -1,6 +1,6 @@
 {
-  "name": "ivmgr",
-  "version": "0.1.0",
+  "name": "@isui1205/ivmgr",
+  "version": "0.1.1",
   "description": "",
   "main": "index.js",
   "scripts": {

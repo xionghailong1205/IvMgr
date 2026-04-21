@@ -11,7 +11,7 @@ export function consoleVersion() {
   console.log(`IvMgr-version: ${getCurVersionFromVersionJSON()}`);
 }
 
-const isDirectCall = !!process.argv.find((p) => p.includes("version.mjs"));
+const isDirectCall = !!process.argv.find((p) => p.includes("version.js"));
 if (isDirectCall) {
   consoleVersion();
 }

@@ -1,6 +1,7 @@
 import type { IvMgrConfig } from "../type.js";
 import { configFilePath } from "./pathService.js";
 import fs from "fs";
+import path from "path";
 
 export function createInitConfigJson() {
     const initConfigJsonContent = `{
@@ -15,6 +16,7 @@ export function createInitConfigJson() {
 }`
 
     console.log(`IvMgr: 已经创建 IvMgr配置文件: ${configFilePath}`);
+    fs.mkdirSync(path.dirname(configFilePath), { recursive: true });
     fs.writeFileSync(configFilePath, initConfigJsonContent, "utf-8");
 }
 
