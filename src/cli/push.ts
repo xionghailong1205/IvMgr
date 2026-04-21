@@ -41,10 +41,8 @@ if (isDirectCall) {
             }
 
             try {
-                const forcePushCommand = `git push -u ${upstreamRepo} ${localBranch}:${upstreamBranch} --force`;
-
+                console.log(`🚚 git push --force...`);
                 await $`git push -u ${upstreamRepo} ${localBranch}:${upstreamBranch} --force`;
-                console.log(`🚚 执行命令: ${forcePushCommand}`);
                 console.log('✅ 成功推送到远程仓库！');
             } catch (error) {
                 console.log('⛔ 推送失败！');
@@ -71,8 +69,8 @@ if (isDirectCall) {
             }
 
             try {
-                await $`git push -u ${upstreamRepo} ${localBranch}:${upstreamBranch}`;
                 console.log("🚚 执行 git push ...")
+                await $`git push -u ${upstreamRepo} ${localBranch}:${upstreamBranch}`;
                 console.log('✅ 成功推送到远程仓库！');
             } catch (error) {
                 console.log('⛔ 推送失败！');
