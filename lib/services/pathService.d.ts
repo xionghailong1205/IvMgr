@@ -12,7 +12,7 @@ export declare const devLogDir: string;
  */
 export declare const changelogPath: string;
 /**
- * Version.json 文件路径
+ * 宿主项目的 Version.json 文件路径
  */
 export declare const versionJsonPath: string;
 /**

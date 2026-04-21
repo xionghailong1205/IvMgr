@@ -2,15 +2,19 @@ import "../utils/zxSetup.js";
 import type { versionInfo } from "../type.js";
 import fs from "fs";
 import path from "path";
-import { versionJsonPath } from "../services/pathService.js";
+import { fileURLToPath } from "url";
 
-function getCurVersionFromVersionJSON() {
-  const versionInfo: versionInfo = JSON.parse(fs.readFileSync(versionJsonPath, "utf-8"));
+// 读取 IvMgr 自身的 Version.json（位于包根目录下的 devLog/）
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const ivMgrVersionJsonPath = path.resolve(__dirname, "../../devLog/Version.json");
+
+function getCurVersionOfIvMgr() {
+  const versionInfo: versionInfo = JSON.parse(fs.readFileSync(ivMgrVersionJsonPath, "utf-8"));
   return versionInfo.version;
 }
 
 export function consoleVersion() {
-  console.log(`IvMgr-version: ${getCurVersionFromVersionJSON()}`);
+  console.log(`IvMgr-version: ${getCurVersionOfIvMgr()}`);
 }
 
 const isDirectCall = !!process.argv.find((p) => p.includes("version.js"));

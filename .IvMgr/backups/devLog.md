@@ -1,1 +1,1 @@
-F [x] 修复 IvMgr push 中存在的问题
+F [x] 修复 Version.json 相关 Bug.
