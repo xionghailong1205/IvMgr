@@ -1,1 +1,2 @@
-F [x] 修复 zx 无法在 powershell 中使用的问题
+F [x] 修复错误读取宿主仓库中的 version.json 的问题。
+A [x] 添加 force push 相关逻辑

@@ -1,7 +1,8 @@
 import "../utils/zxSetup.js";
 import type { versionInfo } from "../type.js";
-import { versionJsonPath } from "../services/pathService.js";
 import fs from "fs";
+import path from "path";
+import { versionJsonPath } from "../services/pathService.js";
 
 function getCurVersionFromVersionJSON() {
   const versionInfo: versionInfo = JSON.parse(fs.readFileSync(versionJsonPath, "utf-8"));
